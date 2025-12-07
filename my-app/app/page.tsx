@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 import Modal from "./components/modal/Modal";
+import LiquidGlassWrapper from "./components/liquidGlass/liquidGlassWrapper/LiquidGlassWrapper";
 
 export default function Home() {
   const router = useRouter();
@@ -26,12 +27,13 @@ export default function Home() {
             Upload a photo library, take a selfie and we’ll show where you
             appear.
           </p>
-          <button
+          <LiquidGlassWrapper
             onClick={() => setShowModal(!showModal)}
-            className="openModalButton px-6 py-3 bg-[#a3c49d] text-white"
+            className="openModalButton px-6 py-3 text-white z-0"
+            tintBg="rgba(163, 196, 157, 0.5)"
           >
             Get started
-          </button>
+          </LiquidGlassWrapper>
           {showModal && (
             <Modal
               title="Let's Upload Your Image"

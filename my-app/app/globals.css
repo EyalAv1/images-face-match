@@ -263,12 +263,6 @@ body {
   }
 
   .modalContent {
-    background-color: #fff;
-    border-radius: 30px;
-    color: violet;
-    padding: 15px;
-    width: fit-content;
-    z-index: 11;
     align-items: center;
     justify-content: center;
     display: flex;
